@@ -1,0 +1,74 @@
+* turma.css */
+
+body { font-family: 'Merriweather', serif; }
+
+.nome { 
+        font-size: 1.6em;
+        font-weight: 700;
+      }
+
+.numero {
+         font-size:1.2em;
+         font-weight: 300;
+        }   
+
+/* Contentor dos <li> */ 
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+} 
+
+li { 
+    width: 30%;
+    margin-bottom: 60px;
+    display:flex;
+    align-items: center;
+}
+
+div.foto { margin-right: 32px;}
+
+div.info { 
+            display: flex;
+            flex-direction: column;
+        }
+
+/*
+li { 
+    border-width: 1px;
+    border-style: solid;
+    border-color: #831D1C;
+    border-color: rgb( 131, 29, 28);
+} 
+*/
+
+div.foto { 
+            width: 140px;
+            height: 140px;
+            border-radius:50%;
+            overflow:hidden;
+
+            display: flex;
+            align-items: center;
+         }
+
+/* Pontos de Quebra
+   Media Queries
+*/  
+
+@media ( max-width:1200px )
+{
+    li { width: 45%; }
+}
+
+@media ( max-width: 900px )
+{
+    li { width: 90%; }
+}
+
+@media ( max-width:500px )
+{
+    li { flex-direction: column;}
+
+    .numero { text-align: center;}
+}
