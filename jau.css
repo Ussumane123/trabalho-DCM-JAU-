@@ -1,6 +1,7 @@
 * turma.css */
 
 body { font-family: 'Merriweather', serif; }
+img{max-width: 100%;}
 
 .nome { 
         font-size: 1.6em;
@@ -43,9 +44,9 @@ li {
 */
 
 div.foto { 
-            width: 140px;
-            height: 140px;
-            border-radius:50%;
+            
+        
+            border-radius:12%;
             overflow:hidden;
 
             display: flex;
